@@ -3,6 +3,7 @@
     import { browser } from '$app/environment';
     let menuAbierto = false;
     let token = null;
+    let video = "/images/asosi.mp4"
   
     function toggleMenu() {
       menuAbierto = !menuAbierto;
@@ -21,9 +22,10 @@
     }
   </script>
   
-  <nav class="bg-blue-900 text-white px-4 py-3 shadow-md">
-    <div class="container mx-auto flex items-center justify-between">
-      <a href="/" class="font-bold">LatamUp</a>
+  <nav class="bg-indigo-900 text-white px-4 py-3 shadow-md flex flex-col items-center">
+    <p>Asosiacion Siempre a tu Lado</p>
+    <div class="container mx-auto flex items-center justify-between mt-4">
+      <a href="/" class="font-bold">ASATL</a>
   
       <!-- Botón hamburguesa (visible solo en móvil) -->
       <button class="md:hidden focus:outline-none" on:click={toggleMenu}>
@@ -32,6 +34,7 @@
             d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
+      <button class="bg-rose-600 p-2 text-white font-bold rounded-xl">Donar </button>
   
       <!-- Enlaces (pantallas grandes) -->
       <ul class="hidden md:flex space-x-6">
